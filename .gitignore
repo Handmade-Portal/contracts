@@ -8,6 +8,7 @@
 # General
 .DS_Store
 .AppleDB
+.idea
 
 # Test binary, built with `go test -c`
 *.test
