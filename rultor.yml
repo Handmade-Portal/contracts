@@ -1,0 +1,24 @@
+architect:
+  - l3r8yJ
+  - Japsty
+docker:
+  image: ubuntu:12.10
+merge:
+  script:
+    - echo "Merge"
+    - go build
+    - go test
+    - git merge
+  fast-forward: default
+deploy:
+  env:
+  script:
+    - echo "Deploy"
+    - git push origin
+release:
+  script: |
+    echo "Release"
+    git checkout dev
+    git pull origin dev
+    git commit -am "$tag"
+    git push origin $tag
