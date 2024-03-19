@@ -1,0 +1,20 @@
+openapi: 3.0.3
+info:
+  title: HandMadePortal Contracts - OpenAPI 3.0
+  description:
+    This is a sample HandmadePortal Server based on the OpenAPI 3.0 specification.
+  license:
+    name: MIT License
+    url: https://github.com/Handmade-Portal/docs/blob/main/LICENSE
+  version: 0.0.1
+tags:
+  - name: auth
+    description: Operations related to user authentication
+  - name: toys
+    description: Operations related to toys
+  - name: cart
+    description: Operations related to shopping cart
+  - name: order
+    description: Operations related to orders
+  - name: acquiring
+    description: Operations related to payment acquiring
